@@ -1,0 +1,125 @@
+$fontFamily: 'Poppins', Arial, Helvetica, sans-serif;
+$color:#fff;
+
+%cursor {
+    cursor: pointer;
+}
+
+
+body {
+    font-family: $fontFamily;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #272727;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #323131;
+    padding: 10px 20px;
+
+    .logo-img {
+        .img {
+            width: 50px;
+        }
+    }
+
+    nav {
+        display: flex;
+        gap: 15px;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+
+            &:hover {
+                color: #ccc;
+            }
+        }
+
+        button {
+            background-color: #fff;
+            color: #323131;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            @extend%cursor;
+
+            &:hover {
+                background-color: #ddd;
+            }
+        }
+    }
+}
+
+main {
+    section {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        gap: 29px;
+        align-items: center;
+        padding: 28px;
+
+
+        .text-content {
+            max-width: 50%;
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 800;
+            }
+
+            article {
+                margin-top: 15px;
+
+                h2 {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    margin-top: 10px;
+                    font-weight: 300;
+                }
+            }
+
+            .comprar{
+            background-color: #fff;
+            color: #323131;
+            border: none;
+            padding: 12px 68px;
+            border-radius: 5px;
+            @extend%cursor;
+
+            &:hover {
+                background-color: #ddd;
+                transform:scale(1.2);
+                transition: all 1.5s ease;
+            }
+
+            }
+        
+        }
+
+
+        .image-container {
+           
+            justify-content: center;
+
+            img {
+                max-width: 100%;
+                border-radius: 10px;
+                width: 300px;
+
+                &:hover {
+                    transform:scale(1.1);
+                    transition: all 1.5s ease;
+                }
+            }
+        }
+    }
+}

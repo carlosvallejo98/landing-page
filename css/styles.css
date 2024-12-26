@@ -1,0 +1,94 @@
+main section .text-content .comprar, header nav button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #272727;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #323131;
+  padding: 10px 20px;
+}
+header .logo-img .img {
+  width: 50px;
+}
+header nav {
+  display: flex;
+  gap: 15px;
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+header nav a:hover {
+  color: #ccc;
+}
+header nav button {
+  background-color: #fff;
+  color: #323131;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+header nav button:hover {
+  background-color: #ddd;
+}
+
+main section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 29px;
+  align-items: center;
+  padding: 28px;
+}
+main section .text-content {
+  max-width: 50%;
+}
+main section .text-content h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+main section .text-content article {
+  margin-top: 15px;
+}
+main section .text-content article h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+main section .text-content article p {
+  margin-top: 10px;
+  font-weight: 300;
+}
+main section .text-content .comprar {
+  background-color: #fff;
+  color: #323131;
+  border: none;
+  padding: 12px 68px;
+  border-radius: 5px;
+}
+main section .text-content .comprar:hover {
+  background-color: #ddd;
+  transform: scale(1.2);
+  transition: all 1.5s ease;
+}
+main section .image-container {
+  justify-content: center;
+}
+main section .image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  width: 300px;
+}
+main section .image-container img:hover {
+  transform: scale(1.1);
+  transition: all 1.5s ease;
+}/*# sourceMappingURL=styles.css.map */
